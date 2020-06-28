@@ -9,12 +9,10 @@ Kubernetes Security Audit Checklist
 -	[ ]	Are you running your CI/CD pipeline in your production cluster? Does it have privileged access or use the Docker socket?
 -	[ ]	Are you scanning your container images for vulnerabilities?
 -	[ ]	Do you have a process or tooling in place for rebuilding and redeploying containers where the image is found to include vulnerabilities?
--	[ ]	"Are you using a seccomp or AppArmor profile?
-(The default Docker profiles are a good starting point; even better would be to shrink-wrap a profile for each application.)"
+-	[ ]	"Are you using a seccomp or AppArmor profile? (The default Docker profiles are a good starting point; even better would be to shrink-wrap a profile for each application.)"
 -	[ ]	If your host operating system supports SELinux, is it enabled? Do your applications have the right SELinux profiles attached?
 -	[ ]	Is the contents of your base images/ Container image analyzed for unnecessary packages to reduce the attack surface?
--	[ ]	"Are you enforcing the use of immutable containers?
-(Are you making sure that all executable code is added to a container image at build time and not installed at runtime?"
+-	[ ]	"Are you enforcing the use of immutable containers? (Are you making sure that all executable code is added to a container image at build time and not installed at runtime?"
 -	[ ]	Are you setting resource limits on your containers?
 -	[ ]	Do you have admission control to make sure that only approved images can be instantiated in production?
 -	[ ]	Are you using mTLS connections between components?
@@ -30,3 +28,7 @@ Kubernetes Security Audit Checklist
 -	[ ]	Are you running regular checks on the security settings on the underlying cloud infrastructure using a CSPM tool?
 -	[ ]	Are your hosts and container configured according to security best practices such as the CIS Benchmarks for Linux, Docker, and Kubernetes?
 -	[ ]	Did you conducted security assessment for the application deployed inside the container?
+
+
+Credit:
+- https://info.aquasec.com/container-security-book
