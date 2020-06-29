@@ -1,4 +1,4 @@
-### k8checklist (WIP)
+### K8S checklist (WIP)
 # Kubernetes Security Audit Checklist
 This checklist can be handy for both admin and security assessor who wishes to tighten the security posture of their kubernetes environment. This list is compiled with the knowledge I gained by referencing multiple sources mentioned at the bottom of this page.
 (*Note: This is not a complete list and I will be adding more during my journey of my learning K8 security*)
